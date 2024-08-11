@@ -2,6 +2,19 @@
 QEMU README
 ===========
 
+My notes
+===========
+
+- configure: `./configure --target-list=x86_64-softmmu`
+- allocate space: `qemu-img create -f qcow2 win10_test.qcow2 30G`
+- setup VM: `./qemu-system-x86_64 --enable-kvm -drive file=/home/gareth/Downloads/custom-qemu-build/build/win10_test.qcow2,if=ide -m 6144 -device virtio-net-pci -boot d -drive file=/home/gareth/Downloads/Win10_22H2_English_x64v1.iso,media=cdrom -drive file=/home/gareth/Downloads/virtio-win-0.1.262.iso,media=cdrom -rtc base=localtime,clock=host -smp cores=2,threads=4 -usb -device usb-tablet`
+- run VM: `./qemu-system-x86_64 --enable-kvm -drive file=/home/gareth/Downloads/custom-qemu-build/build/win10_test.qcow2,if=ide -m 6144 -device virtio-net-pci -boot d -rtc base=localtime,clock=host -smp cores=2,threads=4 -usb -device usb-tablet`
+
+Useful links:
+- https://www.funtoo.org/Windows_10_Virtualization_with_KVM
+- https://wiki.qemu.org/Hosts/Linux
+- https://pragmaticaddict.com/qemu-win10.html
+
 QEMU is a generic and open source machine & userspace emulator and
 virtualizer.
 

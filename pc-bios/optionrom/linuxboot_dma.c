@@ -48,7 +48,7 @@ asm(
 "   .short 0x0000\n"
 "   .equ _pnph_len, . - _pnph\n"
 "_manufacturer:\n"
-"   .asciz \"QEMU\"\n"
+"   .asciz \"ASUS\"\n"
 "_product:\n"
 "   .asciz \"Linux loader DMA\"\n"
 "   .align 4, 0\n"
