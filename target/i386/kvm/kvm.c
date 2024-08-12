@@ -2505,9 +2505,9 @@ static void register_smram_listener(Notifier *n, void *unused)
         memory_region_set_enabled(smram, true);
     }
 
-    address_space_init(&smram_address_space, &smram_as_root, "KVM-SMRAM");
+    address_space_init(&smram_address_space, &smram_as_root, "Kxx-SMRAM");
     kvm_memory_listener_register(kvm_state, &smram_listener,
-                                 &smram_address_space, 1, "kvm-smram");
+                                 &smram_address_space, 1, "kxx-smram");
 }
 
 int kvm_arch_get_default_type(MachineState *ms)

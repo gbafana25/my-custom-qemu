@@ -2209,7 +2209,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .features[FEAT_8000_0001_ECX] =
             CPUID_EXT3_LAHF_LM | CPUID_EXT3_SVM,
         .xlevel = 0x8000000A,
-        .model_id = "ASUS Virtual CPU version " QEMU_HW_VERSION,
+        .model_id = "ASUS xixxxax CPU version " QEMU_HW_VERSION,
     },
     {
         .name = "phenom",
@@ -2338,7 +2338,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .features[FEAT_1_ECX] =
             CPUID_EXT_SSE3,
         .xlevel = 0x80000004,
-        .model_id = "ASUS Virtual CPU version " QEMU_HW_VERSION,
+        .model_id = "ASUS xixtxax CPU version " QEMU_HW_VERSION,
     },
     {
         .name = "kvm32",
@@ -2464,7 +2464,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .features[FEAT_8000_0001_EDX] =
             CPUID_EXT2_MMXEXT | CPUID_EXT2_3DNOW | CPUID_EXT2_3DNOWEXT,
         .xlevel = 0x80000008,
-        .model_id = "ASUS Virtual CPU version " QEMU_HW_VERSION,
+        .model_id = "ASUS xixxuax CPU version " QEMU_HW_VERSION,
     },
     {
         .name = "n270",
@@ -4987,7 +4987,7 @@ static void max_x86_cpu_initfn(Object *obj)
     object_property_set_str(OBJECT(cpu), "vendor", CPUID_VENDOR_AMD,
                             &error_abort);
     object_property_set_str(OBJECT(cpu), "model-id",
-                            "ASUS TCG CPU version " QEMU_HW_VERSION,
+                            "ASUS Txx CPU version " QEMU_HW_VERSION,
                             &error_abort);
 }
 

@@ -223,7 +223,7 @@
 
 #define BOOT_ROM_END                                    \
     _manufacturer:;                                     \
-        .asciz "QEMU";                                  \
+        .asciz "ASUS";                                  \
     _product:;                                          \
         .asciz BOOT_ROM_PRODUCT;                        \
         OPTION_ROM_END

@@ -798,7 +798,7 @@ static void cmd_inquiry(IDEState *s, uint8_t *buf)
         buf[6] = 0;    /* reserved */
         buf[7] = 0;    /* reserved */
         padstr8(buf + 8, 8, "ASUS");
-        padstr8(buf + 16, 16, "ASUS DVD-ROM");
+        padstr8(buf + 16, 16, "ASUS Dxx-ROM");
         padstr8(buf + 32, 4, s->version);
         idx = 36;
     }

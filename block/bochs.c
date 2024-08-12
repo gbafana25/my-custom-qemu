@@ -32,7 +32,7 @@
 
 /**************************************************************/
 
-#define HEADER_MAGIC "Bochs Virtual HD Image"
+#define HEADER_MAGIC "Asuss Virtual HD Image"
 #define HEADER_VERSION 0x00020000
 #define HEADER_V1 0x00010000
 #define HEADER_SIZE 512
@@ -300,7 +300,7 @@ static void bochs_close(BlockDriverState *bs)
 }
 
 static BlockDriver bdrv_bochs = {
-    .format_name	= "bochs",
+    .format_name	= "asuss",
     .instance_size	= sizeof(BDRVBochsState),
     .bdrv_probe		= bochs_probe,
     .bdrv_open		= bochs_open,
